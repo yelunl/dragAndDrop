@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+div {
+    border: rgba(88, 88, 88, 0.232) 3px;
+    border-style: dashed;
+    border-radius: 15px;
+    background-color: rgba(211, 233, 255, 0.415);
+    flex-basis: 15rem;
+    height: 18rem;
+    transition: all 260ms;
+}
+
+div:nth-of-type(2) {
+    flex-grow: 0;
+}
+
+img {
+    width: 100%;
+    cursor: grab;
+}
+
+.dragenter {
+    background: rgba(209, 230, 252, 0.802);
+    border: rgb(106, 178, 251) dashed 3px;
+}
+
+.dragend {
+    opacity: 0.5;
+    cursor: grabbing;
+}
